@@ -1,7 +1,7 @@
 {
   "name": "localref",
   "version": "1.0.0",
-  "description": "Super simple application state management",
+  "description": "Super simple react app state management",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
