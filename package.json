@@ -1,0 +1,19 @@
+{
+  "name": "localref",
+  "version": "1.0.0",
+  "description": "Super simple application state management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulmand3l/localref.git"
+  },
+  "author": "Paul Mandel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulmand3l/localref/issues"
+  },
+  "homepage": "https://github.com/paulmand3l/localref#readme"
+}
