@@ -1,2 +1,2 @@
-export { LocalDocument, LocalCollection } from './src/LocalRef';
-export { withRefs, withDocument, withCollection } from './src/withData';
+export { LocalDocument, LocalCollection } from './lib/LocalRef';
+export { withRefs, withDocument, withCollection } from './lib/withData';
