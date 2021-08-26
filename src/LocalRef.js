@@ -1,6 +1,6 @@
-import _ from 'lodash'
-import { v4 as uuid } from 'uuid'
-import EventEmitter from 'eventemitter3'
+import cloneDeep  from 'lodash.clonedeep';
+import { v4 as uuid } from 'uuid';
+import EventEmitter from 'eventemitter3';
 
 
 class LocalDocument {
@@ -22,7 +22,7 @@ class LocalDocument {
   _getSnapshot() {
     return {
       id: this.id,
-      data: () => _.cloneDeep(this.data),
+      data: () => cloneDeep(this.data),
     }
   }
 
@@ -79,8 +79,8 @@ class LocalDocument {
     return this.subcollections[name];
   }
 
-  async get() {
-    return Promise.resolve(this._getSnapshot());
+  get() {
+    return this._getSnapshot();
   }
 
   onSnapshot(fn) {
