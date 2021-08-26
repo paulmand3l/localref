@@ -50,7 +50,7 @@ export const withCollection = (WrappedComponent, collectionRef, propName) => {
 export const withDocument = (WrappedComponent, documentRef, propName) => {
   return class extends React.PureComponent {
     state = {
-      data: {},
+      data: documentRef.get().data(),
     }
 
     componentDidMount() {
